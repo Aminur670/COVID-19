@@ -4,10 +4,9 @@
 
 ##### It's a Futuristic Data Table Generator Program For COVID-19 Situation in Bangladesh
 ```
-Legal Notice : The Algorithm used in this Program and The Generated Data Table,is not 
+Notc : The Algorithm used in this Program and The Generated Data Table,is not 
 related to any real statistics or co-incidence.It's Only for education purpose. And all data 
-rates are changeable anytime.Any comercial use without Developer's Legal permission, will be
-considered as an illegal activity by laws of ICT Legal Acts of Bangladesh's Constitution.
+rates are changeable anytime.Any Even There is and MIT Licence included, any comercial/business/personal use without Developer's Legal permission is not allowed.
 
 
 Starting from 3 April - 5 Infected | rate : 1.8 - 2.0
