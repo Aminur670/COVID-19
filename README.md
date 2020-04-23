@@ -30,7 +30,7 @@ Local Time
 Thursday, April 23, 2020 (GMT+6)
 Time in Rajshahi Division
 ```
-## [Corona Virsu(COVID-19) - Google News](https://news.google.com/covid19/map?hl=en-US&gl=US&ceid=US:en)
+## [Corona Virus(COVID-19) - Google News](https://news.google.com/covid19/map?hl=en-US&gl=US&ceid=US:en)
 ```
 Coronavirus (COVID-19)
 Updated less than 46 minutes ago
