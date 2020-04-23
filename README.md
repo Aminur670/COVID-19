@@ -4,7 +4,7 @@
 
 ##### It's a Futuristic Data Table Generator Program For COVID-19 Situation in Bangladesh
 ```
-Notc : The Algorithm used in this Program and The Generated Data Table,is not 
+Note : The Algorithm used in this Program and The Generated Data Table,is not 
 related to any real statistics or co-incidence.It's Only for education purpose. And all data 
 rates are changeable anytime.Any Even There is and MIT Licence included, any comercial/business/personal use without Developer's Legal permission is not allowed.
 
