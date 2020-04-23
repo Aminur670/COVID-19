@@ -65,12 +65,8 @@ But, it's just about a curiosity to know about next day.
 Corona Virus(COVID-19) Possibility Data Generator
 Developed By MD. Asaduzzaman Aminur 
 Project : https://github.com/Aminur670/COVID-19
-email :aminur670601@gmail.com
--------------------------------------------------------------------------------
-Legal Notice : The Algorithm used in this Program and The Generated Data Table,is not 
-related to any real statistics or co-incidence.It's Only for education purpose. And all data 
-rates are changeable anytime.Any comercial use without Developer's Legal permission, will be
-considered as an illegal activity by laws of ICT Legal Acts of Bangladesh's Constitution.
+Email :aminur670601@gmail.com
+
 -------------------------------------------------------------------------------
 ### Sample Data for Infection Spreading Rate Analysis
 
