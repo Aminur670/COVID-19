@@ -1,0 +1,184 @@
+cls
+clg
+print "Corona Virus(COVID-19) Possibility Data Generator"
+print "Developed By MD. Asaduzzaman Aminur "
+print "Project : https://github.com/Aminur670/COVID-19"
+print "email :aminur670601@gmail.com"
+print "-------------------------------------------------------------------------------"
+print "Legal Notice : The AI Algorithm used in This AI Program and The Generated Data Table,is not related to any real statistics or co-incidence.It's Only for education purpose. And all data rates are changeable anytime.Any comercial use without Developer's Legal permission, will be considered as an illegal activity by laws of ICT Legal Acts of Bangladesh's Constitution."
+
+
+print "-------------------------------------------------------------------------------"
+print "### Sample Data for Infection Spreading Rate Analysis"
+
+print
+print "Starting from 3 April - 5 Infected | rate : 0.73 - 1.00"
+print "Possiblity Calculated for 87 days from 3 April"
+print
+print "Day	 Date	Infected"
+print "-------------------------------"
+print "1	3	5"
+print "2	4	9"
+print "3	5	18 "
+print "4	6	35"
+print
+
+print
+print 
+print "------------- Rate Calculation --------------"
+totalRate= 0
+rate=0
+dim inf(10) fill 0
+#for i=1 to 4 step 1  
+ #input "Day"+i+" Infected :  ",inf[i]
+#next i
+#
+inf[1]=5
+inf[2]=9
+inf[3]=18
+inf[4]=35
+
+for i=1 to 4 step 1  
+ totalRate+= inf[i+1]/inf[i]
+next i
+
+rate = (totalRate/i)*.77
+print
+print "Infected Rate/Day:	"+ rate 
+print
+print
+print "------------- Data Table Calculation --------------"
+print
+print "Keep Count Days same as End Day to get full table to end days"
+
+#Input "Start Day :		",stDay
+print "Start Day :		3"
+stDay=3
+
+#input "Start Infected :	",stInf
+print "Start Infected :	5"
+stInf=5
+
+#Input "End Day :		",enDay
+print"End Day :		91"
+enDay=92
+#enDay=61
+#enDay=30
+
+#Input "Count Days :		",countDays
+print "Count Days :	91"
+countDays = enDay #90
+
+print
+
+date=stInf
+print
+print
+print "---------------------         Data Table         ----------------------"
+print
+print "----------------------------------------------------------------------" 
+print  "Day	|Date		|Infected	|Total"
+print "----------------------------------------------------------------------"
+ 	 
+totalInfected = 0 	 
+infDay=5
+date=stDay
+monthName= "April, 2020"
+april = 1
+
+x=0
+y=graphheight
+
+xt=0
+yt=graphheight/2
+
+
+
+color yellow
+rect 0,0,graphwidth,graphheight/2
+color red
+font "Times New Roman",18,50
+font "Consolas",10,50
+
+color red
+rect 0,graphheight/2,graphwidth,graphheight
+color Black
+font "Consolas",10,50
+text xt,yt,"Daily Total Infected Lines"
+
+color red
+line x,y,x,yt
+
+color yellow
+line x,y,y,y
+
+# Data Table Loop
+		
+for i=stDay to enDay step 1
+
+	 infDay=int(i*i*rate)-2
+	 totalInfected += infDay	 
+
+if i>enDay - countDays then
+
+	 if i<31 and april=1 then 
+ 	 	 
+ 	 	
+ 	 	april=0
+ 	 	print
+		print monthName
+		print
+	
+ 	endif
+
+	 if i =31 then
+ 	 	monthName= "May, 2020"
+ 	 	date=1
+ 	 	print "----------------------------------------------------------------------"
+ 	 	print
+		print monthName
+		print
+	
+ 	endif
+ 	
+ 	 if i =62 then 	 	
+ 	 	monthName= "June, 2020"
+ 	 	date=1
+ 	 	print "----------------------------------------------------------------------"
+ 	 	print
+		print monthName
+		print
+		endif
+ 	 
+ 	 if i = 93 then 	 	
+ 	 	monthName= "July, 2020"
+ 	 	date=1
+ 	 	print
+		print monthName
+		print
+ 	 endif
+	
+	print "Day:"+i +"	|"+ date+" "+monthName+"	|" + infDay +"		|"+  totalInfected  	
+	
+	
+	  
+endif	 
+ 
+penwidth 3
+
+#Daily Infected Lines
+color white
+line x,y,x,int(y-(infDay/10))+200
+x+=1
+
+
+#Daily Total Infected Lines
+color red
+line xt,100,xt,100-(totalInfected/100)  # Total Lines
+xt+=2
+
+
+
+date++	 
+
+next i
